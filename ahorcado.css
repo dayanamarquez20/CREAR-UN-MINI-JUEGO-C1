@@ -1,0 +1,35 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(../Images/fondo.webp);
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+}
+#pantalla {
+  border:solid 3px #bb5113;
+  background: rgb(255, 255, 255);
+  padding: .5rem;
+}
+#boton {
+    border: none;
+    background: #bb5113;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#boton:hover {
+    transform: scale(1.01);
+    background: white;
+    border: 1px solid;
+    color: #bb5113 ; 
+    transition: all 0.33 ;
+}
+.contCanvas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

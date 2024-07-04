@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../Styles/adivinarPaises.css">
+    <link rel="shortcut icon" href="../../Images/bandera.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <title>Paises Desordenados</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="../../index.html">Aprende Jugando</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light hover-navbar"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Primaria
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li>
+                    <a
+                      class="dropdown-item text-light"
+                      href="../Primaria/sumas.html"
+                      >Juego de sumas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="../Primaria/quizz.html">Quizz</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light hover-navbar"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Secundaria
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li>
+                    <a class="dropdown-item text-light" href="../Secundaria/juego1.html">El ahorcado</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="../Secundaria/quizzIngles.html">Quizz ingles</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light hover-navbar"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Universitario
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li>
+                    <a class="dropdown-item text-light" href="">Adivinar Paises</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="./calculadora.html">Calculadora</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <section id="pantalla-inicio">
+        <h2>Coloca las <span>letras</span></h2>
+        <h2>y adivina el <span>pais</span></h2>
+        <button onclick="comenzarJuego()">JUGAR AHORA!</button>
+    </section>
+    <section id="pantalla-juego">
+        <h2>Ordena las <span>letras</span></h2>
+        <h2>y adivina el <span>pais</span></h2>
+
+        <div class="contenedor-pais" id="pais">
+            <div class="letra">A</div>
+            <div class="letra">E</div>
+            <div class="letra">L</div>
+            <div class="letra">A</div>
+            <div class="letra">M</div>
+            <div class="letra">I</div>
+            <div class="letra">A</div>
+            <div class="letra">N</div>
+        </div>
+
+        <input type="text" id="paisIngresado" onkeyup="comparar()">
+
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+
+        <div class="acertadas">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <span id="contador">0</span>
+        </div>
+    </section>s
+    <section id="pantalla-final">
+        <h2>RESULTADO FINAL</h2>
+        <h3 id="resultado">LOGRASTE DESCUBRIR <span id="acertadas">0</span>PAISES</h3>
+        <button onclick="comenzarJuego()">JUGAR OTRA VEZ!</button>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../Scripts/Dificil/adivinarPaises.js"></script>
+</body>
+</html>

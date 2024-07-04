@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.hover-effect:hover {
+    box-shadow: 0 0 10px rgba(232, 135, 135, 0.5);
+    transform: scale(1.01);
+}
+.hover-navbar:hover{
+    font-weight: 600;
+    transform: scale(1.001);
+    transition: all ease-in-out 0.33s;
+}
+.parrafo{
+    width: 60%;
+}
+body{
+	text-align: center;
+	background-image: url('../Images/suma.jpeg'); /* Reemplaza 'tu_imagen_de_fondo.jpg' con el nombre de tu imagen de fondo */
+	background-size: cover;
+	background-attachment: fixed;
+}
+h1{
+	color: white;
+	padding: 50px;
+}
+.contenedor{
+	background-color: #ece379;
+	max-width: 700px;
+	margin: auto;
+	border: 2px solid #030303;
+	border-radius: 20px;
+	display: flex;
+	padding: 50px 0;
+}
+.left{
+	width: 70%;
+	font-size: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.right{
+	width: 30%;
+}
+.msj{
+	font-size: 40px;
+	height: 50px;
+}
+.right{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.opc{
+	width: 80px;
+	height: 80px;
+	border: 1px solid  #121212;
+	font-size: 50px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #906464;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.opc:hover{
+	background-color: #ffffff;
+  color: black;
+  border: 1px solid;
+  transform: scale(1.01);
+  transition: all 0.33s;
+}
+
+.score{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:0.5rem;
+  padding:0.5rem
+}
+.cont-score{
+  display: flex;
+  gap: 1rem;
+}
+.correcta,.incorrecta{
+  padding: 0.5rem;
+  font-size: 25px;
+  font-weight: bold;
+  background: #ffffff;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.btn.btn-outline-dark.link a {
+    color: inherit; /* Utiliza el color del texto del botón por defecto */
+    text-decoration: none; /* Elimina la decoración de texto */
+}
+.btn.btn-outline-dark.link a:hover {
+    color: #fff; /* Cambia el color del texto a blanco al hacer hover */
+}
+.fw-medium {
+	font-weight: 500; /* Puedes ajustar el valor según tus necesidades */
+  }

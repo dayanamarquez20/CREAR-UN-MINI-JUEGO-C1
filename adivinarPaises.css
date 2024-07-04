@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../Images/mundo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    height: 100vh;
+}
+
+
+#pantalla-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh; 
+}
+#pantalla-juego{
+    display: none;
+}
+#pantalla-final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh; 
+}
+
+/* PANTALLA INICIO */
+#pantalla-inicio h2{
+    font-size: 60px;
+    font-weight: bold;
+
+}
+#pantalla-inicio h2 span{
+    color: #13a7bb;
+}
+#pantalla-inicio button{
+    font-weight: bold;
+    border: none;
+    background: #13a7bb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#pantalla-inicio button:hover{
+    transform: scale(1.01);
+    background: white;
+    border: 1px solid;
+    color: #13a7bb ; 
+    transition: all 0.33 
+}
+
+/* PANTALLA JUEGO */
+#pantalla-juego h2{
+    font-size: 40px;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+#pantalla-juego h2 span{
+    color: #13a7bb ;
+}
+#pantalla-juego .contenedor-pais{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pantalla-juego .contenedor-pais .letra{
+    display: inline-block;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 10px;
+    width: 100%;
+    color: #000;
+    border:1px solid;
+    background-color: #fff;
+    font-size: 50px;
+    margin: 2px;
+    text-align: center;
+    font-weight: 800;
+    line-height: 80px;
+}
+#pantalla-juego input{
+    display: flex;
+    font-size: 50px;
+    background: white;
+    outline: none;
+    border: 2px solid #000000;
+    margin: 0 auto;
+    text-align: center;
+    color: #000000;
+    letter-spacing: 4PX;
+}
+#myProgress {
+    width: 300px;
+    margin: auto;
+    background:#edd3f7;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: 50px;
+    border: 1px solid;
+}
+  
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color:#37568f;
+}
+
+#pantalla-juego .acertadas{
+    margin-top: 30px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* PANTALLA FINAL */
+#pantalla-final{
+    font-size: 30px;
+    display: none;
+    flex-direction: column;
+    
+}
+#pantalla-final h2{
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;  
+    border: 1px solid;
+    padding: 0.25rem;
+    border-radius: 20px;  
+}
+#pantalla-final h3{
+    text-align: center;
+    font-weight: bold;
+    background-color: white;    
+}
+
+#pantalla-final h3 span{
+    display: block;
+    font-size: 70px;
+    color: #13a7bb;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;    
+}
+#pantalla-final button{
+    width: fit-content;
+    margin: auto;
+    font-size: 30px;
+    display: inline-block;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    background:#13a7bb;
+    color:#FFF;
+    border-radius: 50px;
+}
+#pantalla-final button:hover{
+    transform: scale(1.01);
+    background: white;
+    border: 1px solid;
+    color: #13a7bb ; 
+    transition: all 0.33 
+
+}
+@media screen and (max-width:1000px) {
+    section{
+        width: 100%;
+    }
+    #pantalla-juego .contenedor-pais .letra{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    #pantalla-juego input{
+        display: block;
+        width: 80%;
+        margin: 40px auto;
+        font-size: 30px;
+    }
+}
